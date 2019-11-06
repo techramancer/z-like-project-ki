@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://pickups/pickup.gd" type="Script" id=1]
+[ext_resource path="res://pickups/money.png" type="Texture" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 4.37246, 7 )
+
+[node name="money" type="Area2D"]
+script = ExtResource( 1 )
+value = 30
+pickup_type = "money"
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 2 )
+hframes = 4
+frame = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )

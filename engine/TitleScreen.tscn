@@ -1,0 +1,35 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://engine/TitleScreen.gd" type="Script" id=1]
+[ext_resource path="res://ui/mmenu.png" type="Texture" id=2]
+[ext_resource path="res://ui/mmenu_options.png" type="Texture" id=3]
+[ext_resource path="res://ui/cursor_002.png" type="Texture" id=4]
+[ext_resource path="res://ui/cursor_hilite.png" type="Texture" id=5]
+[ext_resource path="res://ui/cursor_hl_fill.png" type="Texture" id=6]
+
+[node name="TitleScreen" type="Node2D"]
+pause_mode = 2
+script = ExtResource( 1 )
+
+[node name="title" type="Sprite" parent="."]
+texture = ExtResource( 2 )
+centered = false
+
+[node name="options" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 3 )
+centered = false
+
+[node name="cursor" type="Sprite" parent="."]
+position = Vector2( 62, 78 )
+texture = ExtResource( 4 )
+
+[node name="kh_cursor" type="Sprite" parent="."]
+visible = false
+position = Vector2( 50, 83 )
+texture = ExtResource( 5 )
+
+[node name="kh_toggle" type="Sprite" parent="."]
+visible = false
+position = Vector2( 50, 83 )
+texture = ExtResource( 6 )

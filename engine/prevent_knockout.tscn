@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 6, 64 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 80, 6 )
+
+[node name="preventknock" type="Area2D"]
+
+[node name="left" type="CollisionShape2D" parent="."]
+position = Vector2( 6, 80 )
+shape = SubResource( 1 )
+
+[node name="right" type="CollisionShape2D" parent="."]
+position = Vector2( 154, 80 )
+shape = SubResource( 1 )
+
+[node name="top" type="CollisionShape2D" parent="."]
+position = Vector2( 80, 22 )
+shape = SubResource( 2 )
+
+[node name="bottom" type="CollisionShape2D" parent="."]
+position = Vector2( 80, 138 )
+shape = SubResource( 2 )

@@ -1,0 +1,24 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://pickups/money.png" type="Texture" id=1]
+
+[node name="money_tileset" type="Node"]
+
+[node name="g_money" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+hframes = 4
+
+[node name="b_money" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+hframes = 4
+frame = 2
+
+[node name="r_money" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+hframes = 4
+frame = 1
+
+[node name="y_money" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+hframes = 4
+frame = 3

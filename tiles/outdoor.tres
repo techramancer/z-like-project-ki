@@ -1,0 +1,124 @@
+[gd_resource type="TileSet" load_steps=13 format=2]
+
+[ext_resource path="res://tiles/outdoor_tile_001.png" type="Texture" id=1]
+[ext_resource path="res://tiles/water_001.png" type="Texture" id=2]
+[ext_resource path="res://tiles/water_002.png" type="Texture" id=3]
+[ext_resource path="res://tiles/water_003.png" type="Texture" id=4]
+[ext_resource path="res://tiles/water_004.png" type="Texture" id=5]
+[ext_resource path="res://tiles/water_005.png" type="Texture" id=6]
+[ext_resource path="res://tiles/water_006.png" type="Texture" id=7]
+[ext_resource path="res://tiles/water_007.png" type="Texture" id=8]
+[ext_resource path="res://tiles/water_008.png" type="Texture" id=9]
+[ext_resource path="res://tiles/water_009.png" type="Texture" id=10]
+
+[sub_resource type="ConvexPolygonShape2D" id=1]
+points = PoolVector2Array( 0, 11, 16, 11, 16, 16, 0, 16 )
+
+[sub_resource type="AnimatedTexture" id=2]
+frames = 9
+fps = 5.0
+frame_0/texture = ExtResource( 2 )
+frame_1/texture = ExtResource( 3 )
+frame_1/delay_sec = 0.0
+frame_2/texture = ExtResource( 4 )
+frame_2/delay_sec = 0.0
+frame_3/texture = ExtResource( 5 )
+frame_3/delay_sec = 0.0
+frame_4/texture = ExtResource( 6 )
+frame_4/delay_sec = 0.0
+frame_5/texture = ExtResource( 7 )
+frame_5/delay_sec = 0.0
+frame_6/texture = ExtResource( 8 )
+frame_6/delay_sec = 0.0
+frame_7/texture = ExtResource( 9 )
+frame_7/delay_sec = 0.0
+frame_8/texture = ExtResource( 10 )
+frame_8/delay_sec = 0.0
+
+[resource]
+0/name = "dirt"
+0/texture = ExtResource( 1 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 16, 16 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shapes = [  ]
+0/z_index = 0
+1/name = "grass"
+1/texture = ExtResource( 1 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 16, 0, 16, 16 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shapes = [  ]
+1/z_index = 0
+2/name = "sand_001"
+2/texture = ExtResource( 1 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 32, 0, 16, 16 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shapes = [  ]
+2/z_index = 0
+3/name = "sand_002"
+3/texture = ExtResource( 1 )
+3/tex_offset = Vector2( 0, 0 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 48, 0, 16, 16 )
+3/tile_mode = 0
+3/occluder_offset = Vector2( 0, 0 )
+3/navigation_offset = Vector2( 0, 0 )
+3/shapes = [  ]
+3/z_index = 0
+4/name = "sand_003"
+4/texture = ExtResource( 1 )
+4/tex_offset = Vector2( 0, 0 )
+4/modulate = Color( 1, 1, 1, 1 )
+4/region = Rect2( 64, 0, 16, 16 )
+4/tile_mode = 0
+4/occluder_offset = Vector2( 0, 0 )
+4/navigation_offset = Vector2( 0, 0 )
+4/shapes = [  ]
+4/z_index = 0
+5/name = "water"
+5/texture = ExtResource( 1 )
+5/tex_offset = Vector2( 0, 0 )
+5/modulate = Color( 1, 1, 1, 1 )
+5/region = Rect2( 80, 0, 16, 16 )
+5/tile_mode = 0
+5/occluder_offset = Vector2( 0, 0 )
+5/navigation_offset = Vector2( 0, 0 )
+5/shapes = [  ]
+5/z_index = 0
+8/name = "water_edge"
+8/texture = SubResource( 2 )
+8/tex_offset = Vector2( 0, 0 )
+8/modulate = Color( 1, 1, 1, 1 )
+8/region = Rect2( 0, 0, 16, 16 )
+8/tile_mode = 0
+8/occluder_offset = Vector2( 8, 8 )
+8/navigation_offset = Vector2( 8, 8 )
+8/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+8/z_index = 0
+9/name = "shadow"
+9/texture = ExtResource( 1 )
+9/tex_offset = Vector2( 0, 0 )
+9/modulate = Color( 1, 1, 1, 1 )
+9/region = Rect2( 96, 0, 16, 16 )
+9/tile_mode = 0
+9/occluder_offset = Vector2( 0, 0 )
+9/navigation_offset = Vector2( 0, 0 )
+9/shapes = [  ]
+9/z_index = 0

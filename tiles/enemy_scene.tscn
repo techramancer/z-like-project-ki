@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://enemies/badee.png" type="Texture" id=1]
+
+[node name="enemy_tileset" type="Node"]
+
+[node name="badee" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+hframes = 8
+
+[node name="b_badee" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+hframes = 8
+
+[node name="r_badee" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+hframes = 8
+frame = 2
+
+[node name="y_badee" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+hframes = 8
+frame = 4
